@@ -1,56 +1,105 @@
-/* page.module.css */
-.body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  width: 400px;
+  color: #202124;
+  font-family: Arial, sans-serif;
 }
 
-.logo {
-  font-size: 36px;
-  font-weight: bold;
-  color: #4285f4;
-  margin-bottom: 30px;
-}
-
-.search-bar {
+.header {
   display: flex;
-  width: 100%;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: none;
+  color: #1a73e8;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.buttons button:hover {
+  text-decoration: underline;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  flex: 1; 
+  text-align: center; 
+  padding: 20px; 
+}
+
+.logoImage {
+  margin-bottom: 20px;
+}
+.logoImage img {
+  width: 300px;
+}
+
+.search input {
+  background-color: #f1f3f4;
+  border: 1px solid #dcdcdc;
+  color: #202124;
+  padding: 10px;
+  width: 500px; 
+  border-radius: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  margin-bottom: 20px; 
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center; 
+}
+
+.searchButton {
+  background-color: #f8f9fa;
+  border: 1px solid #f1f3f4;
+  color: #202124;
+  padding: 10px 20px;
   border-radius: 4px;
-  overflow: hidden;
-}
-
-.search-input {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  outline: none;
-}
-
-.search-button {
-  background-color: #4285f4;
-  color: #fff;
-  padding: 12px 16px;
-  border: none;
+  margin: 0 6px;
   cursor: pointer;
 }
 
-.search-button:hover {
-  background-color: #3973c6;
+.searchButton:hover {
+  background-color: #e8e8e8;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid #e8e8e8;
+  background-color: #f1f3f4;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.links a {
+  color: #1a73e8;
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links a:hover {
+  text-decoration: underline;
 }
